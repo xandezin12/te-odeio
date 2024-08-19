@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Aluguéis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Previsão de Aluguéis</h1>
+        <form id="predictionForm">
+            <label for="dayOfWeek">Dia da Semana:</label>
+            <select id="dayOfWeek">
+                <option value="Segunda">Segunda-feira</option>
+                <option value="Terca">Terça-feira</option>
+                <option value="Quarta">Quarta-feira</option>
+                <option value="Quinta">Quinta-feira</option>
+                <option value="Sexta">Sexta-feira</option>
+                <option value="Sabado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+
+            <label for="weather">Clima:</label>
+            <select id="weather">
+                <option value="Ensolarado">Ensolarado</option>
+                <option value="Nublado">Nublado</option>
+                <option value="Chuvoso">Chuvoso</option>
+            </select>
+
+            <button type="button" onclick="predictRentals()">Prever Aluguéis</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
